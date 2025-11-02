@@ -1,0 +1,713 @@
+/* 
+ css/styles.css 
+ Student Name: Yazan Nasser
+ Student Id: 12400750
+*/
+
+:root {
+    --bg: #faf7f2;
+    --text: hwb(0 12% 88%);
+    --muted: #6b6b6b;
+    --brand: #216869;
+    --brand-2: #49a078;
+    --card: #ffffff;
+    --border: #e9e3db;
+}
+
+
+body {
+    margin: 0;
+    font-family: "Rubik", sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+    background-color: #faf7f2;
+    transition: all 0.3s;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+#about,
+#menu,
+#hours,
+#find-us,
+#contact {
+    scroll-margin-top: 105px;
+}
+
+/*all css about header*/
+.site-header {
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: #e9e3db;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: sticky;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.dalouna {
+    color: #2f6d6a;
+    margin-left: 135px;
+}
+
+ul li {
+    display: inline-block;
+    padding: 10px;
+    transition: all 0.3s;
+}
+
+ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #2f6d6a;
+    transition: all 0.4s ease;
+}
+ul li :hover{
+    color: #e9e3db;
+    background-color: #173939;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav {
+    margin-right: 135px;
+    transition: all 0.3s;
+}
+
+.hero {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 750px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5px;
+    transition: all 0.3s;
+}
+
+.Mediterranean {
+    color: #173939;
+    background-color: #49a078;
+    padding: 7px 15px;
+    border-radius: 25px;
+    font-weight: bolder;
+    transition: all 0.3s;
+}
+
+.welcome {
+    color: white;
+    font-weight: bolder;
+    font-size: 70px;
+    margin: 2px;
+    transition: all 0.3s;
+}
+
+.description {
+    color: white;
+    width:100%;
+    font-size: 25px;
+    margin: 10px auto;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.viewMenu {
+    color: white;
+    background-color: #216869;
+    font-size: larger;
+    border-radius: 60px;
+    font-weight: bold;
+    padding: 15px 25px;
+    transition: all 0.4s ease;
+    text-decoration: none;
+    transition: all 0.3s;
+
+}
+
+.viewMenu:hover {
+    color: #216869;
+    background-color: white;
+    cursor: pointer;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 45px;
+    margin-bottom: 75px;
+    max-width: 1100px;
+    margin: 70px auto;
+    transition: all 0.3s;
+}
+
+.aboutUs,
+.chef {
+    border: 1px solid #e9e3db;
+    background-color: white;
+    border-radius: 13px;
+    display: inline-block;
+    width: 550px;
+    height: 320px;
+    transition: all 0.3s;
+}
+
+.aboutUs h2,
+.chef h2 {
+    font-weight: bold;
+    margin-left: 13px;
+}
+
+.aboutUs p,
+.chef p {
+    width: 450px;
+    margin-left: 13px;
+    transition: all 0.3s;
+}
+
+.sub-p {
+    color: rgb(155, 153, 153);
+}
+
+.aboutUs ul {
+    padding: 13px;
+}
+
+.aboutUs ul li {
+    display: inline-block;
+    border: 1px solid #e9e3db;
+    text-align: center;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    margin: 0 auto;
+    transition: all 0.3s;
+}
+
+.sub-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition: all 0.3s;
+}
+
+.mezze,
+.mains,
+.drinks {
+    border: 1px solid #e9e3db;
+    width: 350px;
+    background-color: white;
+    border-radius: 13px;
+    height: 350px;
+    transition: all 0.3s;
+}
+
+.namePrice {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+}
+
+.mezze h3,
+.mains h3,
+.drinks h3 {
+    margin-left: 13px;
+    font-weight: bolder;
+}
+
+.namePrice h4 {
+    margin: 4px 13px;
+    font-weight: bold;
+}
+
+.namePrice p {
+    color: #216869;
+    font-weight: bold;
+    margin-right: 13px;
+}
+
+.sub-menu .mute {
+    color: #6b6b6b;
+    margin-left: 13px;
+}
+
+.taxes {
+    color: #6b6b6b;
+    font-size: small;
+    transition: all 0.3s;
+}
+
+#hours {
+    display: flex;
+    flex-direction: row;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    gap:8px;
+    transition: all 0.3s;
+}
+
+.workHours {
+    margin-bottom: 2px;
+    background-color: #ffffff;
+    border: 1px solid #e9e3db;
+    border-radius: 13px;
+    width: 580px;
+    height: 280px;
+    transition: all 0.3s;
+}
+
+.workHours h2 {
+    margin-left: 10px;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+    height: 50px;
+}
+
+.betweenHours {
+    border: 1px dashed #b7b7b7;
+    margin: 0 10px;
+    font-size: smaller;
+}
+
+.reserveTable {
+    background-color: #ffffff;
+    border: 1px solid #e9e3db;
+    border-radius: 13px;
+    width: 580px;
+    height: 280px;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: all 0.3s;
+}
+
+.reserveTable h2 {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.reserveTable p {
+    margin-left: 10px;
+}
+
+.reserveTable a {
+    color: #2f6d6a;
+}
+
+.reserveTable .ins {
+    margin-left: 10px;
+    color: #6b6b6b;
+    font-size: small;
+    transition: all 0.3s;
+}
+
+#find-us {
+    display: flex;
+    justify-content: space-between;
+    gap:24px;
+    max-width: 1100px;
+    margin: 0 auto;
+    transition: all 0.3s;
+}
+
+.findTyping {
+    background-color: #ffffff;
+    border: 1px solid #e9e3db;
+    border-radius: 13px;
+    width: 545px;
+    height: 240px;
+    transition: all 0.3s;
+}
+
+.findTyping h2 {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.findTyping p {
+    margin-left: 10px;
+    font-size: medium;
+}
+
+.findTyping .exactLoc {
+    color: #6b6b6b;
+    font-size: 14px;
+}
+.pic img {
+    width: 545px;
+    height: 240px;
+    object-fit: cover;
+    border: 1px solid #e9e3db;
+    border-radius: 13px;
+    transition: all 0.3s;
+}
+
+.site-footer-site-12400750 {
+    padding: 8px;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: #e9e3db;
+    max-width: 1200px;
+    margin: 80px auto 0;
+
+}
+.site-footer-site-12400750 p {
+    display: flex;
+    justify-content: center;
+    color: #6b6b6b;
+}
+.site-footer-site-12400750 p a{
+    color: #2f6d6a;
+    text-decoration: none;
+}
+.site-footer-site-12400750 p a:hover {
+    color:#0e5a5a9d;
+    text-decoration: none;
+}
+@media screen and (max-width:1024px )and (min-width:768px){
+.dalouna {
+    margin-left: 105px;
+    font-size: 22px;
+}
+
+ul li {
+    padding: 10px;
+}
+
+nav {
+    margin-right: 105px;
+    transition: all 0.3s;
+}
+
+.hero {
+    height: 550px;
+    gap: 2.5px;
+}
+
+.Mediterranean {
+    padding: 7px 10px;
+    font-size:15px;
+}
+
+.welcome {
+    font-weight: bolder;
+    font-size: 55px;
+ }
+
+.description {
+    font-size: 20px;
+    margin: 10px auto;
+    transition: all 0.3s;
+}
+
+.viewMenu {
+    font-size: 16px;
+    padding: 12px 15px;
+    transition: all 0.4s ease;
+    transition: all 0.3s;
+}
+
+#about {
+    gap: 10px;
+    max-width: 900px;
+    transition: all 0.3s;
+}
+
+
+.aboutUs,
+.chef {
+    width: 400px;
+    height: 320px;
+    transition: all 0.3s;
+}
+
+.aboutUs p,
+.chef p {
+    width: 340px;
+    transition: all 0.3s;
+}
+
+.aboutUs ul li {
+    font-size: 10px;
+    transition: all 0.3s;
+}
+
+#menu {
+    max-width: 900px;
+    margin: 0 auto;
+    transition: all 0.3s;
+}
+
+.sub-menu {
+    gap: 7px;
+    transition: all 0.3s;
+}
+
+.mezze,
+.mains,
+.drinks {
+    width: 266px;
+    height: 420px;
+    transition: all 0.3s;
+}
+.taxes {
+   margin-left: 45px;
+   transition: all 0.3s;
+}
+.menu-start
+{
+    margin-left: 45px;
+    transition: all 0.3s;
+}
+
+#hours {
+    max-width: 900px;
+    gap:8px;
+    transition: all 0.3s;
+}
+
+.workHours {
+    width: 400px;
+    height: 300px;
+    transition: all 0.3s;
+    margin-left: 45px;
+}
+
+.reserveTable {
+    width: 400px;
+    height: 300px;
+    transition: all 0.3s;
+}
+.reserveTable .ins {
+    margin-left: 10px;
+    color: #6b6b6b;
+    font-size: small;
+    transition: all 0.3s;
+}
+
+#find-us {
+    gap:10px;
+    max-width: 900px;
+    margin: 0 auto;
+    transition: all 0.3s;
+}
+
+.findTyping {
+    width: 445px;
+    height: 240px;
+    transition: all 0.3s;
+    margin-left: 45px;
+}
+
+.pic img {
+    width: 395px;
+    height: 240px;
+    transition: all 0.3s;
+    margin-right: 45px;
+}
+}
+
+@media screen and (max-width:768px ) and (min-width:0){
+
+.site-header {
+    height:47px;
+    display: flex;
+    align-items:center;
+    position: sticky;
+}
+.dalouna{
+    margin-left:15px;
+    font-size: 16px;
+}
+
+nav {
+    margin-right: 55px;
+    transition: all 0.3s;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+ul li {
+    width:37px;
+    font-size: 10px;
+    display: block;
+    gap:10px;
+    transition: all 0.4s ease;
+}
+
+.hero {
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.Mediterranean {
+    margin-top: 10px;
+    padding: 7px 10px;
+    font-size:7px;
+}
+
+.welcome {
+    font-weight: bolder;
+    font-size: 30px;
+ }
+
+.description {
+    font-size: 8px;
+    margin: 10px auto;
+    transition: all 0.3s;
+}
+
+.viewMenu {
+    font-size: 7px;
+    padding: 4px 8px;
+    transition: all 0.4s ease;
+    transition: all 0.3s;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 900px;
+    transition: all 0.3s;
+}
+
+
+.aboutUs,
+.chef {
+    width:390px;
+    height: 320px;
+    transition: all 0.3s;
+}
+
+.aboutUs p,
+.chef p {
+    width: 340px;
+    transition: all 0.3s;
+}
+
+.aboutUs ul li {
+    font-size: 10px;
+    width:100px;
+    transition: all 0.3s;
+}
+
+#menu {
+    max-width: 900px;
+    margin: 0 auto;
+    transition: all 0.3s;
+}
+
+.sub-menu {
+    gap: 20px;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.mezze,
+.mains,
+.drinks {
+    width: 390px;
+    height: 340px;
+    transition: all 0.3s;
+}
+.taxes {
+   margin-left: 15px;
+   transition: all 0.3s;
+}
+.menu-start
+{
+    margin-left:15px;
+    transition: all 0.3s;
+}
+
+#hours {
+    max-width: 900px;
+    gap:8px;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.workHours {
+    width: 400px;
+    height: 300px;
+    transition: all 0.3s;
+    margin-left: 15px;
+}
+
+.reserveTable {
+    width: 400px;
+    height: 300px;
+    transition: all 0.3s;
+    margin-left: 15px;
+}
+.reserveTable .ins {
+    margin-left: 10px;
+    color: #6b6b6b;
+    font-size: small;
+    transition: all 0.3s;
+}
+
+#find-us {
+    gap:10px;
+    max-width: 900px;
+    margin: 0 auto;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.findTyping {
+    width: 400px;
+    height: 240px;
+    transition: all 0.3s;
+    margin-left: 15px;
+}
+
+.pic img {
+    width: 400px;
+    height: 240px;
+    transition: all 0.3s;
+    margin-left: 15px;
+}
+footer p{
+    display: flex;
+    flex-direction: column;
+    margin-left: 45px;
+}
+footer p a {
+    margin-left: 65px;
+}
+}
